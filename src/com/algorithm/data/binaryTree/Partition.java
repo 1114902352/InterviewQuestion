@@ -3,7 +3,7 @@ package com.algorithm.data.BinaryTree;
 
 import com.alibaba.fastjson.JSONObject;
 
-public class Test {
+public class Partition {
 
     /**
      * 给定一个非空正整数组，判断是否能够找到两个子序列，使两个子序列的所有元素之和相等
