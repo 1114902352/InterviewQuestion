@@ -1,9 +1,8 @@
-package com.algorithm.data.BinaryTree;
+package com.algorithm.data.binaryTree;
 
 import com.alibaba.fastjson.JSONObject;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 //        Input: [1,2,3]

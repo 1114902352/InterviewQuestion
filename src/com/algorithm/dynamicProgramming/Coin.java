@@ -4,6 +4,8 @@ import com.alibaba.fastjson.JSONObject;
 
 /**
  * 如果我们有面值为1元、3元和5元的硬币若干枚，如何用最少的硬币凑够11元？
+ * 共同的状态转移方程
+ * d(i)=Min{d(i-vj)+1},其中i-vj>=0,vj表示第i个硬币的面值
  */
 public class Coin {
 

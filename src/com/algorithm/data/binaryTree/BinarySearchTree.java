@@ -1,4 +1,4 @@
-package com.algorithm.data.BinaryTree;
+package com.algorithm.data.binaryTree;
 
 /**
  * 二叉查找树或者是一棵空树，或者是具有下列性质的二叉树：
@@ -39,6 +39,52 @@ public class BinarySearchTree {
         }
     }
 
+    /**
+     * 获取目标节点路径，以字符串方式输出
+     * @param root
+     * @param target
+     * @return
+     */
+    public static String getPath(TreeNode root,TreeNode target){
+        if(root == null){
+            return null;
+        }
+        if(root.val == target.val){
+            return root.val+"";
+        }
+        String left = getPath(root.left,target);
+        if(left != null){
+            return left+root.val;
+        }
+        String right = getPath(root.right,target);
+        if(right != null){
+            return right+root.val;
+        }
+        return null;
+    }
+
+    private int sum = 0;
+
+    /**
+     * 给定二叉查找树，要求对二叉查找树上的每一个数字进行修改，其值为原值加上树中比其大的数。
+     */
+    public TreeNode convertBST(TreeNode root) {
+        inorderTraversal(root);
+        return root;
+    }
+
+    public void inorderTraversal(TreeNode root){
+        // 右 根 左 的中序遍历
+        if(root == null){
+            return;
+        }
+        inorderTraversal(root.right);
+        root.val += sum;
+        sum = root.val;
+        inorderTraversal(root.left);
+    }
+
+
     public static TreeNode addNode(TreeNode root,int key){
         TreeNode target = new TreeNode(key);
         if(root == null){
@@ -46,6 +92,20 @@ public class BinarySearchTree {
         }
         addNode(root,target);
         return root;
+    }
+
+    private static void addNode(TreeNode root,TreeNode target){
+        if(target.val > root.val){
+            if(root.right == null){
+                root.right = target;
+            }
+            addNode(root.right,target);
+        }else if(target.val < root.val){
+            if(root.left == null){
+                root.left = target;
+            }
+            addNode(root.left,target);
+        }
     }
 
     public boolean delete(TreeNode root,int val) {
@@ -111,64 +171,5 @@ public class BinarySearchTree {
         }
         return direcrPostNode;//返回此直接后继节点
 
-    }
-
-    private static void addNode(TreeNode root,TreeNode target){
-        if(target.val > root.val){
-            if(root.right == null){
-                root.right = target;
-            }
-            addNode(root.right,target);
-        }else if(target.val < root.val){
-            if(root.left == null){
-                root.left = target;
-            }
-            addNode(root.left,target);
-        }
-    }
-
-    /**
-     * 获取目标节点路径，以字符串方式输出
-     * @param root
-     * @param target
-     * @return
-     */
-    public static String getPath(TreeNode root,TreeNode target){
-        if(root == null){
-            return null;
-        }
-        if(root.val == target.val){
-            return root.val+"";
-        }
-        String left = getPath(root.left,target);
-        if(left != null){
-            return left+root.val;
-        }
-        String right = getPath(root.right,target);
-        if(right != null){
-            return right+root.val;
-        }
-        return null;
-    }
-
-    private int sum = 0;
-
-    /**
-     * 给定二叉查找树，要求对二叉查找树上的每一个数字进行修改，其值为原值加上树中比其大的数。
-     */
-    public TreeNode convertBST(TreeNode root) {
-        inorderTraversal(root);
-        return root;
-    }
-
-    public void inorderTraversal(TreeNode root){
-        // 右 根 左 的中序遍历
-        if(root == null){
-            return;
-        }
-        inorderTraversal(root.right);
-        root.val += sum;
-        sum = root.val;
-        inorderTraversal(root.left);
     }
 }

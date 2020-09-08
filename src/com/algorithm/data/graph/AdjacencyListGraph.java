@@ -48,6 +48,9 @@ class Edge {
 	}
 }
 
+/**
+ * 邻接列表
+ */
 public class AdjacencyListGraph {
 	int k;// 图的顶点数
 	VNode[] V;// 顶点数组

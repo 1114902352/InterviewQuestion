@@ -2,6 +2,9 @@ package com.algorithm.data.string;
 
 import java.util.Stack;
 
+/**
+ * https://www.cnblogs.com/grandyang/p/10634116.html
+ */
 public class ScoreOfParentheses {
 
     // 0 1 2 3 4 5 6 7

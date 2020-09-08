@@ -1,4 +1,4 @@
-package com.algorithm.data.BinaryTree;
+package com.algorithm.data.binaryTree;
 
 /**
  * 这道题给了我们一个数组，让我们创建一个最大二叉树，创建规则是数组中的最大值为根结点，

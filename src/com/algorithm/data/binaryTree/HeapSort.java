@@ -1,4 +1,4 @@
-package com.algorithm.data.BinaryTree;
+package com.algorithm.data.binaryTree;
 
 import com.algorithm.data.topK.MaxHeap;
 import com.alibaba.fastjson.JSONObject;

@@ -6,6 +6,9 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * https://blog.csdn.net/qq_26410101/article/details/81076445
+ */
 public class PartitionLabels {
 
     public List<Integer> partitionLabels(String s){

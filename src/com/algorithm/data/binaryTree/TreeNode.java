@@ -1,4 +1,4 @@
-package com.algorithm.data.BinaryTree;
+package com.algorithm.data.binaryTree;
 
 public class TreeNode{
 	public int val;

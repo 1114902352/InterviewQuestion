@@ -1,12 +1,6 @@
 package com.algorithm.dynamicProgramming;
 
-import com.algorithm.data.BinaryTree.TreeNode;
-
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Stack;
+import com.algorithm.data.binaryTree.TreeNode;
 
 public class HouseRobber {
 

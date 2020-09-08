@@ -2,6 +2,7 @@ package com.algorithm.dynamicProgramming;
 
 /**
  * 计算回文串的个数
+ * LeetCode 730 计算不同回文子序列
  */
 public class CountPalindromicSubstring {
 //        i

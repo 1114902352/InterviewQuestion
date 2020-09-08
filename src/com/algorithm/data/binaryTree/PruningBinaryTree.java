@@ -1,4 +1,4 @@
-package com.algorithm.data.BinaryTree;
+package com.algorithm.data.binaryTree;
 
 /**
  * 给予一个0或者1值的二叉树，要求修剪值全是0的子树，叶子节点为0也被当成全是0的子树

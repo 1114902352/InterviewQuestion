@@ -68,7 +68,7 @@ public class SingleLinked {
 	}
 	
 	/**
-	 * 合并两个有序链表，使新链表
+	 * 合并两个有序链表，使新链表有序
 	 * @return
 	 */
 	public static SingleLinked mergeTwoLists(SingleLinked l1, SingleLinked l2){
