@@ -8,6 +8,7 @@ import com.alibaba.fastjson.JSONObject;
 //...
 //'Z' -> 26
 //Given a non-empty string containing only digits, determine the total number of ways to decode it.
+// 注意0,01,02等不能解码
 public class DecodeWays {
 
 
@@ -36,7 +37,7 @@ public class DecodeWays {
     }
     public static void main(String[] args) {
         DecodeWays t = new DecodeWays();
-        System.out.println(t.numDecodings("10"));
+        System.out.println(t.numDecodings("112020"));
     }
 
 }
