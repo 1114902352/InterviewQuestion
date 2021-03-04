@@ -15,7 +15,7 @@ public class CircularDependenceMain {
 
         X x = (X)application.getBean("x");
         x.check();
-        Y y = (Y)application.getBean("y");
-        y.check();
+//        Y y = (Y)application.getBean("y");
+//        y.check();
     }
 }
