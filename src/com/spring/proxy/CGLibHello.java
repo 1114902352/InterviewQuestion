@@ -1,4 +1,4 @@
-package com.proxy;
+package com.spring.proxy;
 
 public class CGLibHello {
 	public void say(String name){

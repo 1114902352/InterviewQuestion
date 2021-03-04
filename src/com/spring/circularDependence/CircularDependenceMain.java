@@ -1,7 +1,6 @@
-package com.circularDependence;
+package com.spring.circularDependence;
 
 
-import org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 public class CircularDependenceMain {

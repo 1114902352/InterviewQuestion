@@ -1,4 +1,4 @@
-package com.proxy;
+package com.spring.proxy;
 
 import java.lang.reflect.Method;
 

@@ -1,4 +1,4 @@
-package com.proxy.introduction;
+package com.spring.proxy.introduction;
 
 import org.springframework.stereotype.Component;
 /**

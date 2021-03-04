@@ -1,4 +1,4 @@
-package com.proxy.fastclass;
+package com.spring.proxy.fastclass;
 
 public class People {
 

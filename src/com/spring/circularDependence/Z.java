@@ -1,11 +1,5 @@
-package com.circularDependence;
+package com.spring.circularDependence;
 
-
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Primary;
-import org.springframework.stereotype.Component;
-
-import javax.annotation.Resource;
 
 //@Component
 public class Z implements P{

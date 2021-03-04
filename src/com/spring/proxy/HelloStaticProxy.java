@@ -1,4 +1,4 @@
-package com.proxy;
+package com.spring.proxy;
 
 /**
  *	静态代理类，每一个被代理对象都需要一个Proxy对象来进行代理 

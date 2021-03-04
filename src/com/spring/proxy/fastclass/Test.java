@@ -1,4 +1,4 @@
-package com.proxy.fastclass;
+package com.spring.proxy.fastclass;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Method;
