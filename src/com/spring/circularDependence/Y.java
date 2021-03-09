@@ -1,21 +1,24 @@
 package com.spring.circularDependence;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-@Component
-public class Y implements P{
+import javax.annotation.Resource;
 
-//    @Autowired
-    private P p;
+@Component
+public class Y {
+
+    @Autowired
+    private X x;
 
     private String name = "YYY";
 
     public void check() {
         String otherName = "";
-        if(p != null){
-            otherName = p.getName();
+        if(x != null){
+            otherName = x.getName();
         }
-        System.out.println("Im Y,I can get P's Name:" + otherName);
+        System.out.println("Im Y,I can get X's Name:" + otherName);
     }
 
     public String getName() {

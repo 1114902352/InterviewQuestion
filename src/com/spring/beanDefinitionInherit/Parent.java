@@ -1,4 +1,4 @@
-package com.spring.beanInherit;
+package com.spring.beanDefinitionInherit;
 
 public class Parent {
 
